@@ -1,16 +1,28 @@
 {
-  "name": "calculadora-jasm-km",
+  "name": "calculadora-usandojasmine",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "http-server . -p 5000 -c-1 --silent",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayl0KMG/Calculadora-usandoJasmine.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kayl0KMG/Calculadora-usandoJasmine/issues"
+  },
+  "homepage": "https://github.com/kayl0KMG/Calculadora-usandoJasmine#readme",
   "devDependencies": {
-    "jasmine": "^7.0.0"
+    "cypress": "^15.21.1",
+    "http-server": "^14.1.1"
   }
 }
